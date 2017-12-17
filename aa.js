@@ -10,7 +10,7 @@ const http = require('http');
 
   const server = http.createServer(requestHandler)
 
-  server.listen(3000, (err) => {  
+  server.listen(process.env.PORT, (err) => {  
     if (err) {
       return console.log('something bad happened', err)
     }
