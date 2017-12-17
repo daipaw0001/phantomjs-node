@@ -27,7 +27,7 @@ function function2() {
       await page.on('onResourceRequested', function(requestData) {
         console.info('Requesting', requestData.url);
       });
-      for (ii =0; ii < 30; ii++) {
+      for (ii =0; ii < 3; ii++) {
           const status = await page.open('http://adzbux.com/promote7.php?ref=biboucuongoc1102');
           const content = await page.property('content');
       }
