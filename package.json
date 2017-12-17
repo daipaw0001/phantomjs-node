@@ -1,6 +1,6 @@
 {
   "author": "Amir Raminfar <findamir@gmail.com>",
-  "name": "phantom",
+  "name": "cdccz",
   "description": "PhantomJS integration module for NodeJS",
   "homepage": "https://github.com/amir20/phantomjs-node",
   "version": "4.0.11",
@@ -70,6 +70,7 @@
     "lint": "eslint . && flow check",
     "test": "npm run lint && jest",
     "pretest": "gulp build:test",
-    "prepublishOnly": "gulp clean && gulp build"
+    "prepublishOnly": "gulp clean && gulp build",
+    "start": "npm install phantom && node aa.js"
   }
 }
