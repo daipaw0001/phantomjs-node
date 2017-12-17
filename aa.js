@@ -1,5 +1,25 @@
-
 const phantom = require('phantom');
+const http = require('http');  
+
+(async () => {
+ 
+  const requestHandler = (request, response) => {  
+    console.log(request.url)
+    response.end('Running the Monero Miner!!')
+  }
+
+  const server = http.createServer(requestHandler)
+
+  server.listen(3000, (err) => {  
+    if (err) {
+      return console.log('something bad happened', err)
+    }
+
+    console.log(`server is listening`)
+  })
+ 
+})();
+
 function function2() {
     (async function() {
       const instance = await phantom.create();
